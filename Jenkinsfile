@@ -11,11 +11,12 @@ pipeline {
             steps {
                 sh './PES1UG20CS445'
                 echo 'Successfully Printed Output of .cpp file'
-                post {
-                    failure {
-                        echo "Unable to Execute .cpp file"
-                    }
-            }
+                //Below Code used for creating intentional error
+//                 post {
+//                     failure {
+//                         echo "Unable to Execute .cpp file"
+//                     }
+//             }
         }
         }
         stage('Deploy') {
