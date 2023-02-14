@@ -11,10 +11,10 @@ pipeline {
             steps {
                 sh './PES1UG20CS445'
                 echo 'Successfully Printed Output of .cpp file'
-                post {
-                    failure {
-                        echo "Unable to Execute .cpp file"
-                    }
+//                 post {
+//                     failure {
+//                         echo "Unable to Execute .cpp file"
+//                     }
             }
         }
         }
